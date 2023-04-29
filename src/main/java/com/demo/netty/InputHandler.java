@@ -13,7 +13,6 @@ public class InputHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf in = (ByteBuf) msg;
-
         log.info("server received: {}", in.toString());
     }
 

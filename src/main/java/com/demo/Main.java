@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         log.info("starting the server!");
-//        new NioServer().start();
+        new NioServer().start();
         new NettyServer().start();
     }
 }
